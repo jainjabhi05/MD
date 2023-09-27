@@ -82,7 +82,7 @@ def main():
         result=result+1
     st.success('The Terrain Is {}'.format(classes[result]))
 
-if _name=='main_':
+if __name__=='__main__':
     main()
 
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
