@@ -54,9 +54,6 @@ footer {visibility: hidden;}
 with open("style.css") as source:
     design = source.read()
 
-with open("index.js") as source:
-    dom = source.read()
-
 
 transform=transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.4914,0.4822,0.4655),(0.2023,0.1994,0.2010))])
 pickle_in =open("classifier.pkl","rb")
